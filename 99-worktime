@@ -3,10 +3,11 @@ now=$(date +"%Y-%d-%m %H:%M:%S")
 USER_HOME=
 case "$1" in
     hibernate|suspend)
-        echo "out,$now" >> $USER_HOME/worktime.csv
+        echo "out,hibernate,$now" >> $USER_HOME/worktime.csv
         ;;
     thaw|resume)
-        echo "in,$now" >> $USER_HOME/worktime.csv
+        #there is some delay before entry will show up
+        echo "in,hibernate,$now" >> $USER_HOME/worktime.csv
         ;;
     *)
         ;;

@@ -10,4 +10,4 @@
 ### END INIT INFO
 now=$(date +"%Y-%d-%m %H:%M:%S")
 USER_HOME=
-echo "in,$now" >> $USER_HOME/worktime.csv
+echo "in,power,$now" >> $USER_HOME/worktime.csv
