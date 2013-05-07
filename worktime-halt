@@ -1,0 +1,13 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          worktime-halt
+# Required-Start:
+# Required-Stop:
+# Default-Start:
+# Default-Stop:      0
+# Short-Description: Save end worktime
+# Description:
+### END INIT INFO
+now=$(date +"%Y-%d-%m %H:%M:%S")
+USER_HOME=
+echo "out,$now" >> $USER_HOME/worktime.csv

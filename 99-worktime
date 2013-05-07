@@ -1,0 +1,14 @@
+#!/bin/bash
+now=$(date +"%Y-%d-%m %H:%M:%S")
+USER_HOME=
+case "$1" in
+    hibernate|suspend)
+        echo "out,$now" >> $USER_HOME/worktime.csv
+        ;;
+    thaw|resume)
+        echo "in,$now" >> $USER_HOME/worktime.csv
+        ;;
+    *)
+        ;;
+esac
+exit $?
