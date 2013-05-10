@@ -8,6 +8,6 @@
 # Short-Description: Save end worktime
 # Description:
 ### END INIT INFO
-now=$(date +"%Y-%m-%d %H:%M:%S")
+now=$(date +"%Y-%m-%d,%H:%M:%S")
 USER_HOME=
 echo "out,power,$now" >> $USER_HOME/worktime.csv
