@@ -1,5 +1,5 @@
 #!/bin/bash
-now=$(date +"%Y-%d-%m %H:%M:%S")
+now=$(date +"%Y-%m-%d %H:%M:%S")
 USER_HOME=
 case "$1" in
     hibernate|suspend)
